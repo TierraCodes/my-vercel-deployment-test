@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { AwaitedReactNode, JSXElementConstructor, ReactElement, ReactNode, ReactPortal, useState } from "react";
 import { PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient()
@@ -7,13 +7,12 @@ export default async function Home() {
 
   const videos = await prisma.Video.findMany();
 
-  const videosEl = videos.map((video) => <li>{video.name}</li>);
+  const videosUl = videos.map((video) => <li>{video.name}</li>);
 
   return (
     <div>
-      <ul>
-        {videosEl}
-      </ul>
+      <h1>List of Videos</h1>
+      {videosUl}
     </div>
   );
 }
