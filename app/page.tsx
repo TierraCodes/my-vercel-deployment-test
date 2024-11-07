@@ -12,7 +12,7 @@ export default async function Home() {
   return (
     <main>
       <h1>List of Videos</h1>
-      {videosUl}
+      {/* {videosUl} */}
     </main>
   );
 }
