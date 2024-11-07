@@ -10,9 +10,9 @@ export default async function Home() {
   const videosUl = videos.map((video) => <li>{video.name}</li>);
 
   return (
-    <div>
+    <main>
       <h1>List of Videos</h1>
       {videosUl}
-    </div>
+    </main>
   );
 }
