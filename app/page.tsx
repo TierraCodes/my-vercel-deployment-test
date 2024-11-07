@@ -7,7 +7,7 @@ export default async function Home() {
 
   const videos = await prisma.video.findMany();
 
-  const videosUl = videos.map((videoItem) => <li>{videoItem.name}</li>);
+  const videosUl = videos.map((videoItem) => <li key={videoItem.id}>{videoItem.name}</li>);
 
   return (
     <main>
