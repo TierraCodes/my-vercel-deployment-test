@@ -5,9 +5,9 @@ const prisma = new PrismaClient()
 
 export default async function Home() {
 
-  const videos = await prisma.video.findMany();
+  const videos = await prisma.Video.findMany();
 
-  const videosUl = videos.map((Video : {name : string}) => <li>{Video.name}</li>);
+  const videosUl = videos.map((video) => <li>{video.name}</li>);
 
   return (
     <main>

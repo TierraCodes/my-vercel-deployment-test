@@ -1,8 +1,6 @@
 const { PrismaClient } = require('@prisma/client')
 const prisma = new PrismaClient()
 
-
-
 const seed = async () => {
         const createMany = await prisma.Video.createMany({
             data: [
