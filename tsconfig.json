@@ -22,6 +22,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/page.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/page.jsx", "app/videos/add/page.jsx", "app/videos/page.jsx", "app/videos/edit/[slug]/page.jsx", "app/videos/delete/page.jsx", "app/videos/video/[slug]/page.jsx", "app/layout.tsx"],
   "exclude": ["node_modules"]
 }
