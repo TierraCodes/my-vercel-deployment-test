@@ -6,7 +6,7 @@ export default async function addVideo(data) {
     const prisma = new PrismaClient()
     await prisma.video.create({
         data: {
-            name: Sring(data.get('videoname')),
+            name: String(data.get('videoname')),
             url: 'test',
             votes: 0,
             length: Number(data.get('runtime'))
